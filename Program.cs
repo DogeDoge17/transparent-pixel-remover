@@ -21,8 +21,8 @@ namespace TransparentPixelRemover
             {
                 try
                 {
-                    Bitmap bitmap = (Bitmap)Image.FromFile(file);
-
+                    Console.WriteLine($"Beginning on {Path.GetFileName(file)}");
+                    Bitmap bitmap = (Bitmap)Image.FromFile(file);                    
 
                     for (int x = 0; x < bitmap.Width; x++)
                     {
